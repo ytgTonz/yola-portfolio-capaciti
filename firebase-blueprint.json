@@ -1,0 +1,35 @@
+{
+  "databaseId": "ai-studio-485418ab-cafe-47c9-bd8b-f6356385cfad",
+  "schema": {
+    "certifications": {
+      "type": "collection",
+      "description": "Certifications for the portfolio",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "issuer": { "type": "string" },
+        "status": { "type": "string" },
+        "pdfUrl": { "type": "string", "optional": true }
+      }
+    },
+    "projects": {
+      "type": "collection",
+      "description": "Projects for the portfolio",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "category": { "type": "string" },
+        "overview": { "type": "string" },
+        "role": { "type": "string" },
+        "outcomes": { "type": "string", "optional": true },
+        "longDescription": { "type": "string" },
+        "tags": { "type": "array" },
+        "metrics": { "type": "array" },
+        "githubUrl": { "type": "string", "optional": true },
+        "siteUrl": { "type": "string", "optional": true },
+        "imageUrl": { "type": "string", "optional": true }
+      }
+    }
+  }
+}
